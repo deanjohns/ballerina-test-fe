@@ -1,11 +1,11 @@
 import axios from 'axios';
 
 var api = axios.create({
-    baseURL: `https://a68f66b8-cf4c-4ec9-b92a-48238a34734a-prod.e1-us-east-azure.choreoapis.dev/wcyb/newdbservice/1.0.0`,
+    baseURL: process.env.REACT_APP_API_DOMAIN,
     headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
-        'API-Key': 'eyJraWQiOiJnYXRld2F5X2NlcnRpZmljYXRlX2FsaWFzIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI4MjIxMTUzMC1jMjM5LTQ1MGItYmFlYi0xZTc0YzE0ZmYzNThAY2FyYm9uLnN1cGVyIiwiaXNzIjoiaHR0cHM6XC9cL3N0cy5jaG9yZW8uZGV2OjQ0M1wvb2F1dGgyXC90b2tlbiIsImtleXR5cGUiOiJQUk9EVUNUSU9OIiwic3Vic2NyaWJlZEFQSXMiOlt7InN1YnNjcmliZXJUZW5hbnREb21haW4iOm51bGwsIm5hbWUiOiJuZXdkYnNlcnZpY2UiLCJjb250ZXh0IjoiXC9hNjhmNjZiOC1jZjRjLTRlYzktYjkyYS00ODIzOGEzNDczNGFcL3djeWJcL25ld2Ric2VydmljZVwvMS4wLjAiLCJwdWJsaXNoZXIiOiJjaG9yZW9fcHJvZF9hcGltX2FkbWluIiwidmVyc2lvbiI6IjEuMC4wIiwic3Vic2NyaXB0aW9uVGllciI6bnVsbH1dLCJleHAiOjE2Njg2MTIzNDUsInRva2VuX3R5cGUiOiJJbnRlcm5hbEtleSIsImlhdCI6MTY2ODU1MjM0NSwianRpIjoiZjY0ZGZkNzUtNzEwNy00ZGMyLWFiY2YtOTRmNzQ5MjhjMGMzIn0.QktzyUTIsj0gzGDH0HnocCFcDU8JIkVTkPyIobkxtTJjY_g-AjuEkLrWUVnQYud1ygaSU-aMfQm0Roj5lbl11jKWRkm9siAjjYlAxMQdULXsSZiP_gMdrLajR0s4uDN30N5j8PA_-_ieLqzTmSVDHEuV-3WxU3i0R_hVyDLHjuYeD-tbrGXHvzky3D9o6NEZmjIafsY2o1QZkX3_45yxPuHKJsu8zGO1qA41gfNkhLcK990hxkgIOC3QEGP5JdA1q0zUZDU5acg-3BtT6SXknTig4oynBKGwnU_pYG8spvGpjyHirF9FXq1ubnK7K9HmeVi-ASFW1y0xLJNxcXkbaNAcOpriqQX4U0Bkld5mdyA8VXa_DFZIKOSxmTq10SOe2MIiXwLqtq-Nywwnr4x8dxqyhrwbKwXBqv7e9rywvT_kga8s_-vRF3EJa5DHVfgMOh_bYPfrKjYxhZczGFshgTOUcKG0QM8-xJSTnWczyV6rOGFg39XDaLHIce4wlCDWv9-DzKTbX0qQSsIWvfAtKi9hCOASVgQu-QYa3mkJfjxE9V4lUqtzAJkPmRD1C0GbPXQW5IBbFUUzPDzGBkv-1SiTxDGgfkkiF_oWWcsCJDnSVLq0Q1K9d6ZILdvG84-l4TUNb5o_N7iJ-gSBZLgtsIYLU0el-NXqKL8ISiojPqs'
+        'API-Key': process.env.REACT_APP_API_KEY
     }
 });
 
